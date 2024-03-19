@@ -1,0 +1,576 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+<link rel="icon" href="Images/favicon.png" type="image/x-icon">
+<title>Auto Parts</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link href="css/animate.css" rel="stylesheet" />
+<link href="css/fonts.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--formden.js communicates with FormDen server to validate fields and submit via AJAX --> 
+<script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script> 
+
+<!-- Special version of Bootstrap that is isolated to content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+</head>
+
+<body>
+
+<!--MENU SECTION STRAT	-->
+<div class="menu_section">
+  <div class="top_section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 col-md-8">
+          <div class="contact_text">
+            <ul>
+              <li><a href="tel:123 456 7890"><i class="fas fa-phone-volume"></i>(+01) 123 456 7890</a></li>
+              <li><a href="mailto:Info@example.com"><i class="far fa-envelope"></i>Info@example.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="scoial_icon">
+            <ul>
+              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-container">
+    <div class="mobile-menu-close"></div>
+    <div id="mobile-menu-wrap"></div>
+  </div>
+  <!-- Mobile Menu End -->
+  <header class="header" id="myHeader"> 
+    <!--// Main header -->
+    <div class="main-header">
+      <nav class="navbar navbar-expand-lg main-navigation">
+        <div class="container">
+          <div class="col-lg-3 col-6">
+            <div class="logo"><a href=""><img class="img-fluid"  src="Images/logo.png" alt=""></a></div>
+          </div>
+          <div class="col-lg-9 col-6"> 
+            <!--  Show this only on mobile to medium screens  -->
+            <button class="mobile-menu-trigger"> <span></span> <span></span> <span></span> </button>
+            <div class="header-navigation-area">
+              <ul id="main-menu" class="menu">
+                <li><a href="#Home">Home</a></li><li><a href="#aboutus">About Us</a></li><li><a href="#ourservices">Our services</a></li><li><a href="#packages">Packages</a></li><li><a href="#Testimonials">Testimonials</a></li><li><a href="#Contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--// Main End --> 
+  </header>
+</div>
+<!--MENU SECTION END	--> 
+<!--BANNER SECTION START    -->
+<div class="banner_section smoothScroll" id="Home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="menu-section-text wow fadeInLeft">
+          <h5>2021</h5>
+          <h1>For High Efficiency<br>
+            Car parts & Services</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+          <div class="contact-btn"><a href="">Contact Us<i class="fa-solid fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="appoinment-section wow fadeInRight">
+          <div class="make-text">
+            <h1>Make an</h1>
+            <h2>appointment</h2>
+          </div>
+          <form id="contact-form" action="mail.php" method="post">
+          <div class=" mb-4">
+            <input type="text" name="name" placeholder="Your Name" class="form-control" />
+          </div>
+          <div class=" mb-4">
+            <input type="number" name="number" placeholder="Phone number " class="form-control" />
+          </div>
+          <div class=" mb-4">
+            <input name="email" type="text" placeholder="Email" class="form-control">
+          </div>
+          <div class=" mb-4">
+          <div class="bootstrap-iso">
+            <div class="form-group ">
+                <div class="input-group">
+                  <input class="form-control" id="date" name="date" placeholder="Date" type="text"/>
+                  <div class="input-group-addon"> <i class="fas fa-calendar-week"></i> </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class=" mb-4">
+        <input name="time" type="text" placeholder="Time" class="form-control">
+      </div>
+      <div class=" mb-4">
+        <input name="request" type="text" placeholder="Make a Request" class="form-control">
+      </div>
+      <div class=" mb-4">
+        <input name="model" type="text" placeholder="Model" class="form-control">
+      </div>
+      <div class=" mb-4">
+        <input name="year" type="number"  class="form-control"  placeholder="Production Year">
+      </div>
+      <button type="submit" class="btn">Make an Appointment</button>
+        <p class="form-messege"></p>      
+      </form>
+            
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--BANNER SECTION END    --> 
+<!--ABOUT SECTION START    -->
+<div class="section_top" id="aboutus"></div>    
+<div class="abou-section smoothScroll">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about-text wow fadeInLeft">
+          <h1>About Us</h1>
+          <h2>Who We Are</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation.</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip commodo consequat duis aute irure dolor</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about_img wow fadeInRight"><img src="Images/about_img.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--ABOUT SECTION END    --> 
+<!--PROMOTION SECTION START    -->
+<div class="main_promo_section wow fadeInUp">
+  <div class="container">
+    <div class="promotion_section">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <div class="promo_wrpaper">
+            <div class="icon_text"><img src="Images/icon_01.png" alt=""></div>
+            <div class="promo_text">
+              <h1>Free Delivery</h1>
+              <p>Orders Over $100</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="promo_wrpaper">
+            <div class="icon_text"><img src="Images/icon_02.png" alt=""></div>
+            <div class="promo_text">
+              <h1>Money Back Guarantee</h1>
+              <p>With a 30 day</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="promo_wrpaper">
+            <div class="icon_text"><img src="Images/icon_03.png" alt=""></div>
+            <div class="promo_text">
+              <h1>Best Online Support</h1>
+              <p>Hours: 8AM -11PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="promo_wrpaper">
+            <div class="icon_text"><img src="Images/icon_04.png" alt=""></div>
+            <div class="promo_text">
+              <h1>East & Free Returns</h1>
+              <p>Hours: 8AM -11PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--PROMOTION SECTION END    --> 
+
+<!--services section start -->
+<div class="section_top" id="ourservices"></div>     
+<div class="service_section smoothScroll" >
+  <div class="service_text">
+    <h1>Services</h1>
+    <p>Our Services</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="service_box">
+          <div class="service_icon"><i class="fas fa-oil-can"></i></div>
+          <h1>Oil Changes</h1>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip commodo</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service_box">
+          <div class="service_icon"><i class="fas fa-car-crash"></i></div>
+          <h1>Brakes</h1>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip commodo</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service_box">
+          <div class="service_icon"><i class="fas fa-truck-monster"></i></div>
+          <h1>Transmission Service</h1>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip commodo</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="service_box">
+          <div class="service_icon"><i class="fas fa-pump-soap"></i></div>
+          <h1>wash and clean</h1>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip commodo</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service_box">
+          <div class="service_icon"><i class="fas fa-fan"></i></div>
+          <h1>A/C Repaire</h1>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip commodo</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service_box">
+          <div class="service_icon"><i class="fab fa-searchengin"></i></div>
+          <h1>Engine Performance</h1>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip commodo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--services section end    --> 
+<!--Packages section start   -->
+<div class="section_top" id="packages"></div>     
+<div class="packages_section smoothScroll">
+  <div class="packages_text">
+    <h1>Packages</h1>
+    <p>Our packages</p>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="our_box">
+          <div class="free_text">Free Services</div>
+          <div class="free_service_text">
+            <table>
+              <tr>
+                <td>Wiper Blade Installation</td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td>Check Engine Light Code Retrieval</td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td>Air Filter Replacement Installation</td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td>Starting and Charging System Evaluation</td>
+                <td>Free</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="our_box">
+          <div class="free_text">Fluid Services</div>
+          <div class="free_service_text">
+            <table>
+              <tr>
+                <td>Engine Flush Service</td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td>Transmission Fluid Service </td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td>Brake Fluid Exchange</td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td>Coolant Drain and Fill </td>
+                <td>Free</td>
+              </tr>
+              <tr>
+                <td>Power Steering Flush </td>
+                <td>Free</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="our_box">
+          <div class="free_text">Maintenance Services</div>
+          <div class="free_service_text">
+            <table>
+              <tr>
+                <td>Headlight Restoration </td>
+                <td>From $49.99</td>
+              </tr>
+              <tr>
+                <td>Small Bulb Installation </td>
+                <td>From $49.99</td>
+              </tr>
+              <tr>
+                <td>Cabin Air Filter Install </td>
+                <td>From $49.99</td>
+              </tr>
+              <tr>
+                <td>Spring Maintenance Package </td>
+                <td>From $49.99</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="our_box">
+          <div class="free_text">System Evaluations</div>
+          <div class="free_service_text">
+            <table>
+              <tr>
+                <td>A/C System Leak Evaluation </td>
+                <td>From $49.99</td>
+              </tr>
+              <tr>
+                <td>Coolant System Evaluation </td>
+                <td>From $49.99</td>
+              </tr>
+              <tr>
+                <td>Steering and Suspension System Evaluation </td>
+                <td>From $49.99</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="our_box">
+          <div class="free_text">Tune Ups</div>
+          <div class="free_service_text">
+            <table>
+              <tr>
+                <td>Spring Maintenance Package</td>
+                <td>From $49.99</td>
+              </tr>
+              <tr>
+                <td>Summer Maintenance Package</td>
+                <td>From $49.99</td>
+              </tr>
+              <tr>
+                <td>Winter Maintenance Package</td>
+                <td>From $49.99</td>
+              </tr>
+              <tr>
+                <td>Smoke Test Diagnostic Service</td>
+                <td>From $49.99</td>
+              </tr>
+              <tr>
+                <td>Cranks No Start Diagnostic Service</td>
+                <td>From $49.99</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="our_box">
+          <div class="free_text">Coolant System</div>
+          <div class="free_service_text">
+            <table>
+              <tr>
+                <td>Engine Cooling System Check</td>
+                <td>From $49.99</td>
+              </tr>
+              <tr>
+                <td>Drain & Fill Radiator </td>
+                <td>From $49.99</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="make_btn"><a href="">Make an Appointment</a></div>
+  </div>
+</div>
+<!--Packages section end    --> 
+<!--Contact us Section Start-->
+<div class="section_top" id="Contact"></div>    
+<div class="contactus_section smoothScroll" >
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5">
+        <div class="car_img wow fadeInLeft"><img src="Images/car.png" alt=""></div>
+      </div>
+      <div class="col-md-7">
+        <div class="contactus_text wow fadeInRight">
+          <h1>Do You Have Any Questions?</h1>
+          <h2><i class="fas fa-phone-square-alt"></i>Call: 0123 456 7890</h2>
+          <p>We have wide range of Auto parts and Accessories.</p>
+          <div class="contact_btn"><a href="">Contact Us Now</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Contact Us Section End--> 
+<!--Testimonial Section Start -->
+<div class="section_top" id="Testimonials"></div>    
+<div class="testimonial_section smoothScroll" >
+  <div class="testmonial_text">
+    <h1>Testimonial</h1>
+    <h6>What Our Customers<i class="fas fa-grin-alt"></i>About DB Autoparts?</h6>
+    <p>Over 5,000 users in 4 countries use DB Autoparts. Meet some of our customers.</p>
+  </div>
+</div>
+<section class="client_section wow fadeInUp">
+  <div class="container">
+    <div class="row">
+      <div class="owl-carousel owl-theme client_slider wow fadeInUp">
+        <div class="item">
+          <div class="client_box_wapper">
+            <div class="client_contant_box">
+              <div class="client_text">“ Aenean comodo ligula dolor aenean edit massa at socis natoque penatibus magnis parturient montes at nascetur ridculus mus. Donec quam felis ultricies pelentesque pretium quis at consequat massa quis enim condimentum metus edit velit tortor magnis. ”</div>
+            </div>
+            <div class="client_details_wapper">
+              <div class="client_details_images"> <img src="Images/client01.png" alt="" /> </div>
+              <div class="client_details_text"> <span class="title">Lorem Ipsum</span> <span class="review_from">Ligula massa</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="client_box_wapper">
+            <div class="client_contant_box">
+              <div class="client_text">“ Aenean comodo ligula dolor aenean edit massa at socis natoque penatibus magnis parturient montes at nascetur ridculus mus. Donec quam felis ultricies pelentesque pretium quis at consequat massa quis enim condimentum metus edit velit tortor magnis. ”</div>
+            </div>
+            <div class="client_details_wapper">
+              <div class="client_details_images"> <img src="Images/client02.png" alt="" /> </div>
+              <div class="client_details_text"> <span class="title">Lorem Ipsum</span> <span class="review_from">Ligula massa</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="client_box_wapper">
+            <div class="client_contant_box">
+              <div class="client_text">“ Aenean comodo ligula dolor aenean edit massa at socis natoque penatibus magnis parturient montes at nascetur ridculus mus. Donec quam felis ultricies pelentesque pretium quis at consequat massa quis enim condimentum metus edit velit tortor magnis. ”</div>
+            </div>
+            <div class="client_details_wapper">
+              <div class="client_details_images"> <img src="Images/client03.png" alt="" /> </div>
+              <div class="client_details_text"> <span class="title">Lorem Ipsum</span><span class="review_from">Ligula massa</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="client_box_wapper">
+            <div class="client_contant_box">
+              <div class="client_text">“ Aenean comodo ligula dolor aenean edit massa at socis natoque penatibus magnis parturient montes at nascetur ridculus mus. Donec quam felis ultricies pelentesque pretium quis at consequat massa quis enim condimentum metus edit velit tortor magnis. ”</div>
+            </div>
+            <div class="client_details_wapper">
+              <div class="client_details_images"> <img src="Images/client03.png" alt="" /> </div>
+              <div class="client_details_text"> <span class="title">Lorem Ipsum</span><span class="review_from">Ligula massa</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Testimonial Section End    --> 
+<!--Footer Section start  -->
+<div class="footer_section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-3">
+        <div class="footer_logo"><a href="#"><img src="Images/footer_logo.png" alt=""></a></div>
+      </div>
+      <div class="col-md-9">
+        <div class="footer_text">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <div class="location_text"><i class="fas fa-location-arrow"></i>Lorem Ipsum is and typesetting industry.</div>
+            </div>
+            <div class="col-lg-3">
+              <div class="call_text"><a href="tel:123 456 7890"><i class="fas fa-headset"></i>0123 456 7890</a></div>
+            </div>
+            <div class="col-lg-4">
+              <div class="mail_text"><a href="mailto:Info@example.com"><i class="fas fa-envelope-open-text"></i>Info@example.com</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer Section End    --> 
+<!--Top Arrow --> 
+<a class="wow jello" href="javascript:" id="return-to-top"> <i class="fa-solid fa-arrow-turn-up"></i> </a> 
+<!--Top Arrow -->
+    
+<!-- Include jQuery --> 
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+
+<!-- Include Date Range Picker --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>--> 
+<script src="js/wow.min.js"></script> 
+<script src="js/mdb.min.js"></script> 
+<script src="js/owl.carousel.js"></script> 
+<script src="js/shree.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+<script src="js/ajax-mail.js"></script>    
+<script>
+/* WOW ANIMATE JS */
+wow = new WOW({
+    animateClass: 'animated',
+    offset: 100
+});
+wow.init();
+/* WOW ANIMATE JS */
+
+</script> 
+<script>
+ 
+
+</script>
+</body>
+</html>
